@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Parent container */
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  
+  /* Letter boxes */
+  .box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: move 8s linear infinite;
+  }
+  
+  /* Animations */
+  @keyframes move {
+    0% {
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+    }
+    25% {
+      top: 0;
+      left: 100%;
+      transform: rotate(90deg);
+    }
+    50% {
+      top: 100%;
+      left: 100%;
+      transform: rotate(180deg);
+    }
+    75% {
+      top: 100%;
+      left: 0;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 0;
+      left: 0;
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Add delays for each box */
+  .box:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .box:nth-child(2) {
+    animation-delay: 1s;
+  }
+  .box:nth-child(3) {
+    animation-delay: 2s;
+  }
+  .box:nth-child(4) {
+    animation-delay: 3s;
+  }
+  .box:nth-child(5) {
+    animation-delay: 4s;
+  }
+  .box:nth-child(6) {
+    animation-delay: 5s;
+  }
+  .box:nth-child(7) {
+    animation-delay: 6s;
+  }
+  .box:nth-child(8) {
+    animation-delay: 7s;
+  }
+  

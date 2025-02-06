@@ -1,0 +1,44 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode table {
+  border-color: white;
+}
+
+.dark-mode th {
+  background-color: #555;
+}
